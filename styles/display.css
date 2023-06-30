@@ -2,4 +2,5 @@
 
 .menu-btn-display, .menu-btn-display:hover {
     background-color: var( --primary-button);
+    color: var(--secondary-button);
 }

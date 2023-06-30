@@ -11,6 +11,7 @@
 
 .menu-btn-boxmodel:hover, .menu-btn-boxmodel {
     background-color: var( --primary-button);
+    color: var(--secondary-button);
 }
 
 

@@ -50,4 +50,5 @@
 
 .menu-btn-position, .menu-btn-position:hover {
     background-color: var( --primary-button);
+    color: var(--secondary-button);
 }

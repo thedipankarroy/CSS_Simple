@@ -49,6 +49,7 @@ a, ::marker {
 
 .menu-btn-home, .menu-btn-home:hover {
     background-color: var( --primary-button);
+    color: var(--secondary-button);
 }
 
 .article__header {
