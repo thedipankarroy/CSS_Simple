@@ -162,7 +162,7 @@ img {
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--accent);
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 ::-webkit-scrollbar-track {
