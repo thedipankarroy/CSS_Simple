@@ -21,11 +21,13 @@
 
 .fixed__example-middle-right {
     position: fixed;
-    right: 0;
-    bottom: 10%;
+    right: 10px;
+    bottom: 13%;
     padding-left: 10px;
     padding-right: 10px;
     width: 250px;
+    background-color: var(--secondary-button);
+    z-index: 1;
 }
 
 .absolute__example-parent {
@@ -44,5 +46,8 @@
 .sticky__example-top {
     position: sticky;
     bottom: 0;
-    color: rgb(22, 71, 71);
+}
+
+.menu-btn-position, .menu-btn-position:hover {
+    background-color: var( --primary-button);
 }

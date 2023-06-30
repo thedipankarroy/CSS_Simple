@@ -1,2 +1,5 @@
 @import url(general.css);
 
+.menu-btn-selectors, .menu-btn-selectors:hover {
+    background-color: var( --primary-button);
+}

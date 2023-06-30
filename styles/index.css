@@ -1,10 +1,56 @@
 @import url(general.css);
 
-.article__content a:hover {
-   color: var(--accent);
-   transition: all 0.15s ease-in-out;  
+@keyframes side {
+    0% {
+        transform: translateY(0);
+    }
+    
+    100% {
+        transform: translateX(1%);
+    }
+}
+
+@keyframes borderRadius {
+    0% {
+        border-radius: 1px;
+    }
+
+    100% {
+        border-radius: 12px;
+    
+    }
+}
+
+.article__content li:hover {
+   animation-name: side;
+   animation-duration: .37s;
+   animation-timing-function: ease-in-out;
+   animation-fill-mode: forwards;
+   background-color: var(--primary-button-hover);
+   padding: 0px 20px;
+}
+
+.article__content li:active {
+    background-color: var(--primary-button);
+    animation-name: borderRadius;
+    animation-duration: 1ms;
+    animation-timing-function: ease-in-out;
+}
+
+li {
+    transition: all 0.15s ease-in;
+    border-radius: 10px;
+    width: max-content;
 }
 
 a, ::marker {
-    font-size: var(--step-2);
+    font-size: var(--step-1);
+}
+
+.menu-btn-home, .menu-btn-home:hover {
+    background-color: var( --primary-button);
+}
+
+.article__header {
+    font-size: var(--step-3);
 }
