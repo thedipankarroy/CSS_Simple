@@ -157,12 +157,12 @@ img {
 /* Scrollbar */
 
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--accent);
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 ::-webkit-scrollbar-track {

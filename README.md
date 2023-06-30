@@ -1,7 +1,9 @@
 ## CSS Simple
 
 <p align="center">
-  <img src="https://github.com/thedipankarroy/CSS_Simple/blob/main/images/android-chrome-192x192.png">
+  <a href="https://csssimple.netlify.app">
+    <img src="https://github.com/thedipankarroy/CSS_Simple/blob/main/images/android-chrome-192x192.png">
+  </a>
 </p>
 <p align="center">
   CSS Basics Explained
@@ -13,7 +15,7 @@
   <img src="https://raw.githubusercontent.com/thedipankarroy/CSS_Simple/main/images/readme-pictures/home.png">
 </p>
 
-- ### Position 📏
+- ### Position Property 🎢
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/thedipankarroy/CSS_Simple/main/images/readme-pictures/position.png">
