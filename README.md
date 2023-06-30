@@ -1,2 +1,2 @@
-# css_simple
+# CSS Simple
 CSS Basics explained.
