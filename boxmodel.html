@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Box Model</title>
+		<link
+			rel="stylesheet"
+			href="/styles/general.css" />
+		<link
+			rel="stylesheet"
+			href="/styles/boxmodel.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/images/apple-touch-icon.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/images/favicon-32x32.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/images/favicon-16x16.png" />
+	</head>
+	<body>
+		<div class="site">
+			<div class="site__wrapper">
+				<header class="site__header">
+					<div class="header__wrapper">
+						<div class="branding">
+							<img
+								src="/images/android-chrome-192x192.png"
+								alt="logo" />
+							<p>CSS</p>
+							<p>Simple</p>
+						</div>
+						<nav class="site__navigation">
+							<a href="/index.html">Home</a>
+							<a href="/selectors.html">Selectors</a>
+							<a href="/position.html">Position</a>
+							<a href="/boxmodel.html">Box Model</a>
+							<a href="/display.html">Display</a>
+						</nav>
+					</div>
+				</header>
+				<div class="site__inner">
+					<div>
+						<main class="site__main">
+							<article class="article__boxmodel">
+								<header class="article__header">
+									<p class="article__header">Box Model</p>
+								</header>
+								<div class="article__content">
+									<section>
+										<ul>
+											<li>
+												<p>Margin: is the area outside the border</p>
+												<p></p>
+											</li>
+											<li>
+												<p>
+													Border: is the border surrounding the content and
+													padding which could be of any width.
+												</p>
+												<p></p>
+											</li>
+											<li>
+												<p>
+													Padding: is the transparent spacing between the border
+													and the content
+												</p>
+												<p></p>
+											</li>
+											<li>
+												<p>
+													Content: is the actual content may it be text image
+													anything
+												</p>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<ul>
+											<li>
+												<p>
+													Box model is useful when setting some elements height
+													width
+												</p>
+											</li>
+											<li>
+												<p>
+													Let's say a para has a marginleft and right of 10px.
+													If you set the width to 100px the actual width will be
+													120px
+												</p>
+											</li>
+										</ul>
+									</section>
+									<section>
+										<p class="example__header">Example</p>
+										<div class="boxmodel__example-totalWidth example">
+											<p>
+												Margin left and right: 20px, Padding left and right:
+												10px, border:5px
+											</p>
+											<p>Width set to 500px</p>
+											<p>
+												Total width = 500 + 20 + 20 + 10 + 10 + 5 + 5 = 570px
+											</p>
+										</div>
+									</section>
+								</div>
+							</article>
+						</main>
+					</div>
+				</div>
+				<footer class="site__footer">
+					<section>
+						<p>That's it for Box Model</p>
+						<a href="/boxmodel.html">Go back Top</a> |
+						<a href="/index.html">Home</a>
+					</section>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>

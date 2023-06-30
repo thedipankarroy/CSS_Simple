@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Teko:wght@400;500;600;700&family=Ubuntu:wght@300&display=swap');
+
+:root {
+    --text: #020907;
+    --background: #ddf8f2;
+    --primary-button: #26c9a1;
+    --secondary-button: #f6fdfc;
+    --accent: #22b490;
+    
+    --font-heading: 'Teko';
+    --font-text: 'Ubuntu';
+    --font-code: 'Roboto Mono';
+    
+    /* Step 0: 16.00px → 18.00px */
+    --step-0: clamp(1.00rem, calc(0.96rem + 0.22vw), 1.13rem);
+    
+    /* Step 1: 19.20px → 22.50px */
+    --step-1: clamp(1.20rem, calc(1.13rem + 0.36vw), 1.41rem);
+    
+    /* Step 2: 23.04px → 28.13px */
+    --step-2: clamp(1.44rem, calc(1.33rem + 0.55vw), 1.76rem);
+    
+    /* Step 3: 27.65px → 35.16px */
+    --step-3: clamp(1.73rem, calc(1.56rem + 0.82vw), 2.20rem);
+    
+    /* Step 4: 33.18px → 43.95px */
+    --step-4: clamp(2.07rem, calc(1.84rem + 1.17vw), 2.75rem);
+    
+    /* Step 5: 39.81px → 54.93px */
+    --step-5: clamp(2.49rem, calc(2.16rem + 1.64vw), 3.43rem);
+
+
+    --width-custom: min(100% - 3rem, 100ch);
+    --width-custom-header: min(100% - 2rem, 118ch);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --text: #020907;
+        --background: #ddf8f2;
+        --primary-button: #26c9a1;
+        --secondary-button: #f6fdfc;
+        --accent: #22b490;
+    }
+}
+
+* {
+    color: var(--text);
+    margin: 0;
+}
+
+html {
+    background: var(--background);
+}
+
+body {
+    min-height: 50vh;
+}
+
+.site__inner {
+    margin-inline: auto;
+    width: var(--width-custom);
+    font-family: var(--font-text);
+    font-size: var(--step-0);
+    line-height: 1.5;
+}
+
+.site__navigation {
+    display: flex;
+    justify-content: right;
+}
+
+.branding {
+    display: flex;
+    justify-content: left;
+    place-items: center;
+    font-family: var(--font-text);
+    font-size: var(--step-2);column-gap: 5px;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+
+nav > a {
+    font-size: var(--step-1);
+    font-family: var(--font-heading);
+    padding: 9px 15px;
+    letter-spacing: 2px;
+    transition: all 0.15s ease-in-out;
+}
+
+nav > a:hover {
+    background-color: var(--primary-button);
+}
+
+a {
+    text-decoration: none;
+}
+
+.site__header {
+    width: 100%;
+    border-bottom: 1px solid var(--primary-button);
+}
+
+.header__wrapper {
+    background-color: var();
+    width: var(--width-custom-header);
+    margin-inline: auto;
+}
+
+.article__header, .section__header, .example__header {
+    font-family: var(--font-heading);
+    line-height: 1.7;
+}
+
+.article__header {
+    font-size: var(--step-5);
+    letter-spacing: 2.5px;
+}
+
+.section__header {
+    font-size: var(--step-4);
+    letter-spacing: 2.5px;
+}
+
+.example__header {
+    font-size: var(--step-2);
+    letter-spacing: 1.5px;
+}
+
+.site__footer {
+    text-align: center;
+    background-color: var(--secondary-button);
+}
+
+img {
+    width: 45px;
+}
+
+

@@ -1,0 +1,10 @@
+@import url(general.css);
+
+.article__content a:hover {
+   color: var(--accent);
+   transition: all 0.15s ease-in-out;  
+}
+
+a, ::marker {
+    font-size: var(--step-2);
+}

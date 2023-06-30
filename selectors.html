@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Selectors</title>
+		<link
+			rel="stylesheet"
+			href="/styles/selectors.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/images/apple-touch-icon.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/images/favicon-32x32.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/images/favicon-16x16.png" />
+	</head>
+	<body>
+		<div class="site">
+			<div class="site__wrapper">
+				<header class="site__header">
+					<div class="header__wrapper">
+						<div class="branding">
+							<img
+								src="/images/android-chrome-192x192.png"
+								alt="logo" />
+							<p>CSS</p>
+							<p>Simple</p>
+						</div>
+						<nav class="site__navigation">
+							<a href="/index.html">Home</a>
+							<a href="/selectors.html">Selectors</a>
+							<a href="/position.html">Position</a>
+							<a href="/boxmodel.html">Box Model</a>
+							<a href="/display.html">Display</a>
+						</nav>
+					</div>
+				</header>
+				<div class="site__inner">
+					<section>
+						<header>
+							<h1 style="font-size: 40px">Selectors</h1>
+						</header>
+
+						<section>
+							<p>Types of selectors:</p>
+							<ul>
+								<li>Simple Selectors</li>
+								<li>Combinator Selectors</li>
+							</ul>
+						</section>
+					</section>
+
+					<section>
+						<header>
+							<h2>Simple Selectors</h2>
+							<p>Selecting elements based on their id, name and class.</p>
+						</header>
+
+						<article>
+							<h2>Notes</h2>
+							<ol>
+								<li><p>* is a universal selector</p></li>
+								<li><p>we can group elements with commas</p></li>
+								<li><p>Id, class name cannot start with numbers</p></li>
+								<li>
+									<p>with element.class we can also style some elements</p>
+								</li>
+							</ol>
+						</article>
+
+						<article>
+							<h2>Examples</h2>
+							<ul>
+								<li>
+									<p class="bold">* { color: grey; }</p>
+									<p>Universally selected Example</p>
+								</li>
+								<li>
+									<p class="bold">
+										h3, h4, h5 { text-decoration: underline; color:
+										darkseagreen; }
+									</p>
+									<h3>group example</h3>
+									<h4>group example</h4>
+									<h5>group example</h5>
+								</li>
+								<li>
+									<p class="bold">
+										.example { color: black; font-size: 18px; border: 1px solid
+										grey; }
+									</p>
+									<p class="example">
+										element.class example, this para elemets have a class name
+										of example
+									</p>
+								</li>
+								<li>
+									<p class="bold">
+										#names { color: darkcyan; letter-spacing: 4px; }
+									</p>
+									<p id="names">This para has a id of names</p>
+								</li>
+								<li>
+									<p class="bold"></p>
+									<p class="hello">
+										This para element has a class of hello, css only selects a
+										para element with class hello
+									</p>
+								</li>
+							</ul>
+						</article>
+					</section>
+
+					<section>
+						<header>
+							<h2>Combinator Selectors</h2>
+							<p>
+								Using combinators(" ", >, +, ~) we can define the relation
+								between the selectors and style them
+							</p>
+						</header>
+
+						<article>
+							<h2>Notes</h2>
+							<ol>
+								<li>
+									Descendant selectors like (div p) with spaces, selects all the
+									p elements in the div
+								</li>
+								<li>
+									child selector selects only direct childs of a parent
+									element(div > p)
+								</li>
+								<li>
+									Adjacent Sibling Selector is used to select the very next
+									specified.They both should have same parent element(div + p),
+									The next p element will be selected.
+								</li>
+								<li>
+									General Sibling selectors will select all the elements. Like
+									div ~ p, all the p elements after p will be selected.
+								</li>
+							</ol>
+						</article>
+
+						<article>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</article>
+					</section>
+				</div>
+				<footer class="site__footer"></footer>
+			</div>
+		</div>
+	</body>
+</html>
