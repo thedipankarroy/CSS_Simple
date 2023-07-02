@@ -168,3 +168,25 @@ img {
 ::-webkit-scrollbar-track {
     background-color: var(--background);
 }
+
+
+@media screen and (max-width: 700px) {
+    .site__navigation {
+        display: none;
+    }
+
+    ::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--accent);
+        border-radius: 4px;
+    }
+
+    .example {
+        max-width: 400px;
+    }
+        
+    
+}
