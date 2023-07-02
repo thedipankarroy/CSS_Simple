@@ -21,7 +21,6 @@
 
 .fixed__example-middle-right {
     position: fixed;
-    right: 10px;
     bottom: 13%;
     padding-left: 10px;
     padding-right: 10px;
@@ -32,15 +31,13 @@
 
 .absolute__example-parent {
     position: relative;
-    height: 100px;
+    height: 80px;
     border: 1px solid;
 }
 
 .absolute__example {
     position: absolute;
-    width: 200px;
-    top: 30px;
-    left: 300px;
+    left: 100px;
 }
 
 .sticky__example-top {
@@ -51,4 +48,16 @@
 .menu-btn-position, .menu-btn-position:hover {
     background-color: var( --primary-button);
     color: var(--secondary-button);
+}
+
+@media screen and (max-width: 400px) {
+    .absolute__example {
+        min-width: 140px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .absolute__example {
+        left: 100px;
+    }
 }
